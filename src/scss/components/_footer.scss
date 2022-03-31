@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 15px;
+  background-color: #00131E;
+  color: var(--colorWhite);
+  a {
+    transition: all 0.3s ease 0s;
+    color: var(--colorWhite);
+    &:hover {
+      color: var(--colorBlue);
+      text-decoration: underline;
+    }
+  }
+  // .footer__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  // .footer__block
+
+  &__block {
+    flex: 0 1 25%;
+    > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      > li {
+        margin-top: 10px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {}
+
+  // .footer__glasdoor
+
+  &__glasdoor {
+    margin-top: 30px;
+  }
+
+  // .footer__social
+
+  &__social {
+    margin-top: 30px;
+    i {
+      color: #00131E;
+      width: 30px;
+      height: 30px;
+      background-color: var(--colorWhite);
+      font-size: 18px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: var(--colorBlue);
+        color: var(--colorWhite);
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // .footer__copy
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.address {
+  a {
+    display: block;
+    margin-top: 10px;
+  }
+}
+address {
+  margin-top: 10px;
+  line-height: 30px;
+}
+.logos {
+}
+.footer-menu {
+}
+.partner-footer {
+
+}
+.block {
+
+  // .block__name
+
+  &__name {
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+.copy-footer {
+  margin-top: 75px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #CCCCCC;
+  &__left {}
+
+  // .copy-footer__right
+
+  &__right {}
+
+  // .copy-footer__links
+
+  &__links {
+    display: flex;
+    a {
+      display: block;
+      margin: 0 10px;
+      font-size: 13px;
+      line-height: 20px;
+      color: #CCCCCC;
+    }
+  }
+
+  // .copy-footer__privacy
+
+  &__privacy {}
+
+  // .copy-footer__cookie
+
+  &__cookie {}
+}

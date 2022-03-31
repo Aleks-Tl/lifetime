@@ -80,16 +80,29 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  @media (max-width: 576px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 .title-medium {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
+  @media (max-width: 576px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
-.title-medium {
+.title-sm {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+
 }
 .btn {
   background: var(--colorBlue);
@@ -101,4 +114,32 @@ a {
   text-transform: uppercase;
   color: var(--colorWhite);
   padding: 20px 75px;
+  transition: all 0.3s ease 0s;
+  @media (max-width: 768px) {
+    padding: 12px 50px;
+  }
+  @media (max-width: 576px) {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  &:hover {
+    box-shadow: 1px 1px 7px var(--colorBlue);
+    color: rgb(212, 211, 211);
+  }
+}
+
+.btn-sm {
+  background: var(--colorBlue);
+  border: 2px solid var(--colorBlue);
+  border-radius: 30px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--colorWhite);
+  padding: 10px 29px;
+  max-width: 180px;
+  &:hover {
+    box-shadow: 1px 1px 7px var(--colorBlue);
+    color: rgb(212, 211, 211);
+  }
 }

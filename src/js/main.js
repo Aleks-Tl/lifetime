@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 const swiper = new Swiper('.slider-testimonials', {
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 3,
   spaceBetween: 30,
   centeredSlides: true,
   pagination: {
@@ -48,22 +48,18 @@ const swiper = new Swiper('.slider-testimonials', {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
-      centeredSlides: true
     },
-    // when window width is >= 480px
+    // when window width is >= 576px
     576: {
       slidesPerView: 2,
-      spaceBetween: 20,
-      centeredSlides: true
+      spaceBetween: 10,
     },
-    // when window width is >= 640px
-    768: {
+    // when window width is >= 768px
+    992: {
       slidesPerView: 3,
       spaceBetween: 30,
     }
   }
-
-
 });
 
 

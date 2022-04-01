@@ -328,7 +328,7 @@ body {
   &:before {
     content: '';
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 0;
     background-color: var(--colorWhite);
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
@@ -348,6 +348,9 @@ body {
   background-color: var(--blueBg);
   padding-bottom: 150px;
   position: relative;
+  @media (max-width: 576px) {
+    padding-bottom: 100px;
+  }
   &__title {
     text-align: center;
   }
@@ -355,6 +358,9 @@ body {
     position: absolute;
     bottom: 100px;
     z-index: 1;
+    @media (max-width: 576px) {
+      bottom: 60px;
+    }
   }
   .swiper-pagination-bullet {
     width: 40px;
@@ -392,14 +398,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     @media (max-width: 768px) {
       padding: 20px 15px;
       max-width: 100% !important;
       height: auto;
     }
     @media (max-width: 576px) {
-      padding: 17px;
-      width: 90% !important;
+      padding: 15px;
+      width: 100% !important;
       height: auto;
     }
   }

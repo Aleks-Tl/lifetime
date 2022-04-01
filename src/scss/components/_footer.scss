@@ -3,6 +3,9 @@
   padding-bottom: 15px;
   background-color: #00131E;
   color: var(--colorWhite);
+  @media (max-width: 576px) {
+    padding-top: 45px;
+  }
   a {
     transition: all 0.3s ease 0s;
     color: var(--colorWhite);
@@ -62,6 +65,9 @@
 
   &__glasdoor {
     margin-top: 30px;
+    @media (max-width: 576px) {
+      margin-top: 15px;
+    }
   }
 
   // .footer__social

@@ -1,6 +1,5 @@
 .footer {
   padding-top: 60px;
-  padding-bottom: 15px;
   background-color: #00131E;
   color: var(--colorWhite);
   @media (max-width: 576px) {
@@ -74,20 +73,27 @@
 
   &__social {
     margin-top: 30px;
-    i {
-      color: #00131E;
+    a {
+      display: inline-block;
+      margin-right: 10px;
+      background-color: white;
       width: 30px;
       height: 30px;
-      background-color: var(--colorWhite);
-      font-size: 18px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
+      border-radius: 2px;
       transition: all 0.3s ease 0s;
-      margin: 0 5px;
       &:hover {
-        background-color: var(--colorBlue);
-        color: var(--colorWhite);
+        box-shadow: 1px 1px 3px rgba(255,255,255,0.56);
+      }
+      .svg {
+        width: 30px;
+        height: 30px;
+        background-color: #00131E;
+        font-size: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+          background-color: var(--colorBlue);;
+        }
       }
     }
   }
@@ -109,9 +115,9 @@
   }
   &__phone {
     padding-left: 35px;
-    background-image: url('../img/phone.png');
-    background-position: left 0px;
-    background-size: 15px 17px;
+    background-image: url('../img/phone-svgrepo-com.svg');
+    background-position: -2px 0px;
+    background-size: 18px 17px;
     background-repeat: no-repeat;
     @media (max-width: 576px) {
       background-image: none;
@@ -120,8 +126,8 @@
   }
   &__email {
     padding-left: 35px;
-    background-image: url('../img/mail.png');
-    background-position: left 0px;
+    background-image: url('../img/mail-svgrepo-com.svg');
+    background-position: left 1px;
     background-size: 15px 17px;
     background-repeat: no-repeat;
     @media (max-width: 576px) {
@@ -131,9 +137,9 @@
   }
   &__url {
     padding-left: 35px;
-    background-image: url('../img/url.png');
-    background-position: left 0px;
-    background-size: 15px 17px;
+    background-image: url('../img/www-svgrepo-com.svg');
+    background-position: -2px 4px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
     @media (max-width: 576px) {
       background-image: none;
@@ -151,8 +157,8 @@ address {
   margin-top: 10px;
   line-height: 30px;
   padding-left: 35px;
-  background-image: url('../img/location.png');
-  background-position: left 6px;
+  background-image: url('../img/location-svgrepo-com.svg');
+  background-position: left 7px;
   background-size: 15px 17px;
   background-repeat: no-repeat;
   @media (max-width: 576px) {
@@ -178,17 +184,33 @@ address {
   }
 
 }
-.copy-footer {
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 75px;
-  font-size: 13px;
-  line-height: 20px;
-  color: #CCCCCC;
+  background-color: #00080D;
   @media (max-width: 768px) {
     margin-top: 30px;
   }
   @media (max-width: 576px) {
     font-size: 12px;
-    margin-top: 15px;
+  }
+}
+.copy-footer {
+
+  font-size: 13px;
+  line-height: 20px;
+  color: #CCCCCC;
+  a {
+    color: #CCCCCC;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
   }
   &__left {
     @media (max-width: 768px) {
@@ -226,8 +248,9 @@ address {
       width: 100%;
       @media (max-width: 576px) {
         margin: 0;
-        margin-right: 20px;
         margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
       }
     }
     @media (max-width: 576px) {

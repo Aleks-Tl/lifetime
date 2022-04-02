@@ -84,8 +84,23 @@ counters.forEach(counter => {
   updateCounter();
 });
 
+// SVG Animation
 
+const hero1 = new Vivus(
+  'hero1',
+  {
+    type: 'async',
+    duration: 300
+  }
+);
 
+const hero2 = new Vivus(
+  'hero2',
+  {
+    type: 'async',
+    duration: 300
+  }
+);
 
 
 

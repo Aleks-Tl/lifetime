@@ -197,7 +197,6 @@ address {
   }
 }
 .copy-footer {
-
   font-size: 13px;
   line-height: 20px;
   color: #CCCCCC;
@@ -208,7 +207,6 @@ address {
       text-decoration: none;
     }
   }
-
   @media (max-width: 576px) {
     font-size: 12px;
   }
@@ -262,6 +260,9 @@ address {
 
   &__privacy {
     white-space: nowrap;
+    @media (max-width: 576px) {
+      font-size: 12px !important;
+    }
 
   }
 
@@ -269,5 +270,8 @@ address {
 
   &__cookie {
     white-space: nowrap;
+    @media (max-width: 576px) {
+      font-size: 12px !important;
+    }
   }
 }

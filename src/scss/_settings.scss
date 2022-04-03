@@ -34,11 +34,15 @@ html {
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    @media (max-width: 992px) {
+    @media (max-width: 1400px) {
       width: 200vh;
       height: 200vh;
     }
-    @media (max-width: 576px) {
+    @media (max-width: 992px) {
+      width: 150vh;
+      height: 150vh;
+    }
+    @media (max-width: 768px) {
       width: 100vh;
       height: 100vh;
     }

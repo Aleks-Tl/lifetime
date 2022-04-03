@@ -48,3 +48,24 @@ $browser-context: 16; // Default
     "#{$pathToImage}.jpg"type("image/jpg")
   );
 }
+
+@mixin elipse {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: var(--colorWhite);
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    width: 110%;
+    transform: translateX(-5%);
+    height: 150px;
+    z-index: 1;
+    @media (max-width: 768px) {
+      top: -10px;
+    }
+    @media (max-width: 576px) {
+      position: static;
+    }
+  }
+}

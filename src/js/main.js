@@ -74,7 +74,7 @@ counters.forEach(counter => {
     const target = +counter.getAttribute('data-target');
     const c = +counter.innerText;
 
-    const increment = target / 1000;
+    const increment = target / 500;
 
     if (c < target) {
       counter.innerText = `${Math.ceil(c + increment)}`;
@@ -90,7 +90,7 @@ const hero1 = new Vivus(
   'hero1',
   {
     type: 'async',
-    duration: 300
+    duration: 200
   }
 );
 
@@ -98,10 +98,33 @@ const hero2 = new Vivus(
   'hero2',
   {
     type: 'async',
-    duration: 300
+    duration: 200
   }
 );
 
+const count1 = new Vivus(
+  'count1',
+  {
+    type: 'oneByOne',
+    duration: 250
+  }
+);
+
+const count2 = new Vivus(
+  'count2',
+  {
+    type: 'oneByOne',
+    duration: 250
+  }
+);
+
+const count3 = new Vivus(
+  'count3',
+  {
+    type: 'oneByOne',
+    duration: 250
+  }
+);
 
 
 

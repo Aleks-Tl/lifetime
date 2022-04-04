@@ -8,6 +8,43 @@ html {
   box-sizing: inherit;
 }
 
+
+.all_pages{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 101;
+  &:hover{
+    ul{
+      right: 0;
+    }
+  }
+  .page_point{
+    padding: 10px 15px;
+    background: #00d2ff;
+    cursor: pointer;
+  }
+  ul{
+    background: #00D2FF;
+    padding: 15px 20px;
+    position: absolute;
+    top: 61%;
+    width: 200px;
+    right: -200px;
+    transition: .4s;
+    max-height: 450px;
+    overflow-y: auto;
+    li{
+      list-style: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
@@ -28,8 +65,8 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300vh;
-    height: 300vh;
+    width: 260vh;
+    height: 260vh;
     background-color: #EAF4FB;
     z-index: -1;
     border-radius: 50%;
@@ -127,6 +164,10 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  @media (max-width: 576px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
 }
 .btn {

@@ -69,3 +69,40 @@ $browser-context: 16; // Default
     }
   }
 }
+
+@mixin ring {
+  &:after {
+    content:'';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--colorWhite);
+    border: 40px solid var(--blueBg);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+@mixin circle-big {
+  &:after {
+    content:'';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--blueBg);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+@mixin circle-sm {
+  &:before {
+    content:'';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--blueBg);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

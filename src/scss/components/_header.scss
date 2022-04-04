@@ -122,6 +122,9 @@
         }
           &.active {
             color: var(--colorBlue);
+            &:hover {
+              color: var(--colorWhite);
+            }
           }
           @media (max-width: 1065px) {
             font-size: 13px;

@@ -294,7 +294,7 @@ body {
   &__img {
     @media (max-width: 576px) {
       max-width: 80px;
-      img {
+      object {
         width: 80%;
       }
     }

@@ -90,7 +90,7 @@ const hero1 = new Vivus(
   'hero1',
   {
     type: 'async',
-    duration: 200
+    duration: 100
   }
 );
 
@@ -98,7 +98,7 @@ const hero2 = new Vivus(
   'hero2',
   {
     type: 'async',
-    duration: 200
+    duration: 100
   }
 );
 

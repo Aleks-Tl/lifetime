@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="services">
+      <div class="container">
+        <div class="services__wrap">
+          <div class="services__block-top">
+            <div class="services__info">
+              <div class="services__title title-big">Careers with Us</div>
+              <div class="services__title-sm title-sm">Our culture</div>
+              <div class="services__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend interdum nibh in hendrerit.
+                  Nunc a pretium purus. Vestibulum dictum, erat sed facilisis tempor, nisi magna efficitur eros, eget
+                  placerat ex ligula at nisl. Suspendisse scelerisque nulla et cursus vulputate. Morbi dapibus eget orci
+                  non eleifend. Suspendisse potenti. Vivamus a justo ut elit faucibus convallis. Phasellus non lectus
+                  odio. Aliquam eu rutrum diam, non malesuada quam. Sed pellentesque aliquam pharetra. In ac dictum ex.
+                </p>
+              </div>
+              <div class="services__title-sm title-sm">Why work here</div>
+              <div class="services__text">
+                <p>Nulla commodo sapien turpis, et pharetra lectus feugiat sit amet. Suspendisse sed vulputate neque. Ut
+                  massa dolor, tincidunt eget libero a, congue ullamcorper nisl. Suspendisse quis elementum tortor, at
+                  volutpat mauris. Integer tempus ligula enim, sed gravida sapien vestibulum et. Ut enim nulla, ornare
+                  vel massa quis, tempor rutrum nunc. Nunc non elit ac orci pulvinar hendrerit a nec erat. </p>
+              </div>
+            </div>
+            <div class="services__img">
+              <object id="services1" type="image/svg+xml" data="img/career-img-1.svg"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="service">
+      <div class="container">
+        <div class="service__wrap">
+          <div class="service__block service__block_flex service-mb20">
+            <div class="service__info">
+              <div class="service__title-sm title-sm">Probate </div>
+              <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend
+                interdum nibh in hendrerit. Nunc a pretium purus. Vestibulum dictum, erat sed facilisis tempor, nisi
+                magna efficitur eros, eget placerat ex ligula at nisl. Suspendisse scelerisque nulla et cursus
+                vulputate. Morbi dapibus eget orci non eleifend. Suspendisse potenti. Vivamus a justo ut elit faucibus
+                convallis. Phasellus non lectus odio. Aliquam eu rutrum diam, non malesuada quam. Sed pellentesque
+                aliquam pharetra. In ac dictum ex. </div>
+              <div class="service__list">
+                <ul>
+                  <li>Nulla commodo sapien turpis, et pharetra lectus feugiat sit amet.</li>
+                  <li>Suspendisse sed vulputate neque.</li>
+                  <li>Ut massa dolor, tincidunt eget libero a, congue ullamcorper nisl.</li>
+                  <li>Suspendisse quis elementum tortor, at volutpat mauris.</li>
+                  <li>Integer tempus ligula enim, sed gravida sapien vestibulum et.</li>
+                  <li>Ut enim nulla, ornare vel massa quis, tempor rutrum nunc.</li>
+                  <li>Nunc non elit ac orci pulvinar hendrerit a nec erat. </li>
+                </ul>
+              </div>
+            </div>
+            <div class="service__img service-6">
+              <img src="img/career-img-2.png" alt="service">
+            </div>
+          </div>
+          <div class="service__block">
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="success-customers">
+      <section class="customers">
+        <div class="container">
+          <div class="customers__wrap">
+            <div class="customers__title title-medium">What Our Customers Say</div>
+            <div class="customers__slider">
+              @include('partials/slider.html')
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="success-contact">
+      @include('partials/contactus.html')
+    </div>
+
+    @include('partials/footer.html')
+
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

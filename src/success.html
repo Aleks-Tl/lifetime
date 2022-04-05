@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="services">
+      <div class="container">
+        <div class="services__wrap">
+          <div class="services__block-top">
+            <div class="services__info">
+              <div class="services__title title-big">Success</div>
+              <div class="services__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend interdum nibh in hendrerit.
+                  Nunc a pretium purus. Vestibulum dictum, erat sed facilisis tempor, nisi magna efficitur eros, eget
+                  placerat ex ligula at nisl. Suspendisse scelerisque nulla et cursus vulputate. Morbi dapibus eget orci
+                  non eleifend. Suspendisse potenti. Vivamus a justo ut elit faucibus convallis. Phasellus non lectus
+                  odio. Aliquam eu rutrum diam, non malesuada quam. Sed pellentesque aliquam pharetra. In ac dictum ex.
+                </p>
+
+                <p>Nulla commodo sapien turpis, et pharetra lectus feugiat sit amet. Suspendisse sed vulputate neque. Ut
+                  massa dolor, tincidunt eget libero a, congue ullamcorper nisl. Suspendisse quis elementum tortor, at
+                  volutpat mauris. Integer tempus ligula enim, sed gravida sapien vestibulum et. Ut enim nulla, ornare
+                  vel massa quis, tempor rutrum nunc. Nunc non elit ac orci pulvinar hendrerit a nec erat. </p>
+              </div>
+            </div>
+            <div class="services__img">
+              <object id="#" type="image/svg+xml" data="img/success-img-1.svg"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="count-duplicate">
+      <div class="container">
+        <div class="count-duplicate__title-medium title-medium">Lifetime Legal In Numbers</div>
+        <div class="count-duplicate__wrap">
+          <div class="count-duplicate__item">
+            <div class="count-duplicate__img">
+              <object id="count1" type="image/svg+xml" data="img/success-img-2.svg"></object>
+              <!-- <img src="img/count-img-1.svg" alt="count-img" id="count1"> -->
+            </div>
+            <div class="count-duplicate__info">
+              <span class="counter" data-target="2000"></span><span>+</span><br>NEW MEMBERS PER MONTH
+            </div>
+          </div>
+          <div class="count-duplicate__item">
+            <div class="count-duplicate__img">
+              <object id="count2" type="image/svg+xml" data="img/success-img-3.svg"></object>
+              <!-- <img src="img/count-img-2.svg" alt="count-img" id="count2"> -->
+            </div>
+            <div class="count-duplicate__info">
+              <span class="counter" data-target="1000"></span><span>+</span><br>ENHANCED DUE DILIGENCE COMPLETED PER
+              MONTH
+            </div>
+          </div>
+          <div class="count-duplicate__item">
+            <div class="count-duplicate__img">
+              <object id="count3" type="image/svg+xml" data="img/success-img-4.svg"></object>
+              <!-- <img src="img/count-img-3.svg" alt="count-img" id="count3"> -->
+            </div>
+            <div class="count-duplicate__info">
+              <span class="counter" data-target="5000"></span><span>+</span><br>ANTI MONEY LAUNDERING CHECKS COMPLETED
+              PER MONTH
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__title-medium title-medium">Testimonials</div>
+        <div class="testimonials__wrap">
+          <div class="testimonials__item">
+            <div class="testimonials__img">
+              <img src="img/testimonials-img-1.svg" alt="testimonials">
+            </div>
+            <div class="testimonials__name"><span>KEVIN SHAW</span> <br>
+              Managing Director Residential Sales Leaders</div>
+            <div class="testimonials__text">
+              “Lifetime Legal a commercially-minded, progressive and easy to deal with company this is exactly what I
+              look for in a business partner. Their solution-driven staff have become integral to our business, together
+              we have developed services that enhance our customer journey. The comprehensive suite of MI combined with
+              the ongoing support and training of our staff provides a better service for clients and delivers strong
+              sales results.
+            </div>
+            <div class="testimonials__btn btn-sm btn-reset">LEARN MORE</div>
+          </div>
+
+          <div class="testimonials__item">
+            <div class="testimonials__img">
+              <img src="img/testimonials-img-2.svg" alt="testimonials">
+            </div>
+            <div class="testimonials__name"><span>TONY GIBSON</span><br>
+              Managing Director Romans Residential Sales</div>
+            <div class="testimonials__text">
+              “ At the forefront of our decision making processes are our customers, their journey and their experience
+              with us as we look to advise and guide them through the property buying and selling process. When we went
+              to the market and outlined this criteria to prospective suppliers, the team at Lifetime Legal showed a
+              level of understanding that was refreshing and demonstrated a willingness to work together in developing
+              services which enabled us to place our customers first.
+            </div>
+            <div class="testimonials__btn btn-sm btn-reset">LEARN MORE</div>
+          </div>
+
+          <div class="testimonials__item">
+            <div class="testimonials__img">
+              <img src="img/testimonials-img-3.svg" alt="testimonials">
+            </div>
+            <div class="testimonials__name"><span>TONY GIBSON</span><br>
+              Managing Director Homes Partnership Estate Agents</div>
+            <div class="testimonials__text">
+              “We have worked with Lifetime Legal since the very start, having worked with Rob Sendall and Dave Hunt
+              previously, it was a very easy decision to choose them as our preferred supplier. The level of customer
+              service and support offered to our sales team is excellent and the ease of access to the portal makes it
+              quick and easy for us to submit new leads.
+            </div>
+            <div class="testimonials__btn btn-sm btn-reset">LEARN MORE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="success-customers">
+      <section class="customers">
+        <div class="container">
+          <div class="customers__wrap">
+            <div class="customers__title title-medium">What Our Customers Say</div>
+            <div class="customers__slider">
+              @include('partials/slider.html')
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="success-contact">
+      @include('partials/contactus.html')
+    </div>
+
+    @include('partials/footer.html')
+
+
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

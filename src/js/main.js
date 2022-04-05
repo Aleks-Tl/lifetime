@@ -86,7 +86,7 @@ counters.forEach(counter => {
 
 // SVG Animation
 
-const hero1 = new Vivus(
+/* const hero1 = new Vivus(
   'hero1',
   {
     type: 'async',
@@ -129,3 +129,4 @@ const count3 = new Vivus(
 
 
 
+ */

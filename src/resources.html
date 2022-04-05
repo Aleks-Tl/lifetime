@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="services">
+      <div class="container">
+        <div class="services__wrap">
+          <div class="services__block-top">
+            <div class="services__info">
+              <div class="services__title title-big">Resources</div>
+              <div class="services__title-sm title-sm">Jargon and Definitions</div>
+              <div class="services__content">
+                <p><span>Lorem ipsum</span> - dolor sit amet, consectetur adipiscing elit. Nulla eleifend interdum nibh
+                  in hendrerit. Nunc a pretium purus.</p>
+                <p><span>Vestibulum dictum</span> - erat sed facilisis tempor, nisi magna efficitur eros, eget placerat
+                  ex ligula at nisl. Suspendisse scelerisque nulla et cursus vulputate.</p>
+                <p><span>Morbi dapibus</span> - eget orci non eleifend. Suspendisse potenti. Vivamus a justo ut elit
+                  faucibus convallis. Phasellus non lectus odio. </p>
+                <p><span>Aliquam eu</span> - rutrum diam, non malesuada quam. Sed pellentesque aliquam pharetra. In ac
+                  dictum ex.</p>
+                <p><span>Nulla eleifend</span> - interdum nibh in hendrerit. Nunc a pretium purus. Vestibulum dictum,
+                  erat sed facilisis tempor, nisi magna efficitur eros, eget placerat ex ligula at nisl. </p>
+                <p><span>Suspendisse</span> - scelerisque nulla et cursus vulputate. Morbi dapibus eget orci non
+                  eleifend. Suspendisse potenti. Vivamus a justo ut elit faucibus convallis.</p>
+              </div>
+            </div>
+            <div class="services__img">
+              <object id="services1" type="image/svg+xml" data="img/resourses-img-1.svg"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="service">
+      <div class="container">
+        <div class="service__wrap">
+          <div class="service__block service__block_flex service-mb20">
+            <div class="service__info">
+              <div class="service__title-sm title-sm">Process explanations </div>
+              <div class="resourse__list">
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend interdum nibh in
+                    hendrerit. Nunc a pretium purus.</li>
+                  <li> Vestibulum dictum, erat sed facilisis tempor, nisi magna efficitur eros, eget placerat ex ligula
+                    at nisl. Suspendisse scelerisque nulla et cursus vulputate.</li>
+                  <li>Morbi dapibus eget orci non eleifend. Suspendisse potenti. Vivamus a justo ut elit faucibus
+                    convallis. Phasellus non lectus odio. Aliquam eu rutrum diam, non malesuada quam. Sed pellentesque
+                    aliquam pharetra. In ac dictum ex.</li>
+                  <li>Quisque tincidunt elit non orci ultrices ullamcorper. Curabitur nec turpis porta, vulputate metus
+                    vel, eleifend urna. Aenean venenatis odio non porta mattis. Suspendisse vel enim hendrerit, bibendum
+                    arcu ac, mollis turpis.</li>
+                  <li>Phasellus lectus lectus, vestibulum a tellus at, dictum dictum neque. Aenean viverra elit velit,
+                    non lobortis libero dictum eu. Maecenas orci nisl, maximus non dolor non, imperdiet consectetur
+                    nunc.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="service__img service-7">
+              <img src="img/resourses-img-2.png" alt="service">
+            </div>
+          </div>
+          <div class="service__block">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    @include('partials/contactus.html')
+
+    @include('partials/footer.html')
+
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

@@ -84,49 +84,37 @@ counters.forEach(counter => {
   updateCounter();
 });
 
-// SVG Animation
+// Accordion
 
-/* const hero1 = new Vivus(
-  'hero1',
-  {
-    type: 'async',
-    duration: 100
+const acc_btns = document.querySelectorAll('.accordion__header');
+const acc_contents = document.querySelectorAll('.accordion__body');
+
+acc_btns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+
+    acc_contents.forEach((acc) => {
+      if (e.target.nextElementSibling !== acc && acc.classList.contains('active')) {
+        acc.classList.remove('active');
+        acc_btns.forEach((btn) => btn.classList.remove('active'));
+      }
+    })
+    const panel = btn.nextElementSibling;
+    panel.classList.toggle('active');
+    btn.classList.toggle('active');
+
+    /* if (panel.classList.contains('active')) {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    } else {
+      panel.style.maxHeight = null;
+    } */
+
+
+  })
+})
+
+window.onclick = (e) => {
+  if (!e.target.matches('.accordion__header')) {
+    acc_btns.forEach((btn) => btn.classList.remove('active'));
+    acc_contents.forEach((acc) => acc.classList.remove('active'));
   }
-);
-
-const hero2 = new Vivus(
-  'hero2',
-  {
-    type: 'async',
-    duration: 100
-  }
-);
-
-const count1 = new Vivus(
-  'count1',
-  {
-    type: 'oneByOne',
-    duration: 250
-  }
-);
-
-const count2 = new Vivus(
-  'count2',
-  {
-    type: 'oneByOne',
-    duration: 250
-  }
-);
-
-const count3 = new Vivus(
-  'count3',
-  {
-    type: 'oneByOne',
-    duration: 250
-  }
-);
-
-
-
-
- */
+}

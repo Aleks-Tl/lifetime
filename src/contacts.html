@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <div class="contacts">
+      <div class="container">
+        <div class="contacts__wrap">
+          <div class="contacts__left">
+            <div class="contacts__title-big title-big">Drop Us a Line</div>
+            <form action="#" class="feed-form">
+              <label for="firstname">First name<span>*</span></label>
+              <input id="firstname" name="name" type="text">
+              <label for="lastname">Last name<span>*</span></label>
+              <input id="lastname" name="name" type="text">
+              <label for="email">Your email<span>*</span></label>
+              <input id="email" name="email" type="email">
+              <label for="text">Your message</label>
+              <textarea id="text" name="text"></textarea>
+              <div class="button__wrap">
+                <button class="feed-form__btn btn btn-reset">Send it</button>
+              </div>
+            </form>
+          </div>
+          <div class="contacts__right">
+            <div class="contacts__title title-big">Get In Touch</div>
+            <div class="contacts__text">Lifetime Legal delivers carefully tailored products, services and benefits to
+              meet the unique circumstances of our clients. Get in touch to find out what we can build together.</div>
+            <div class="contacts__block address-contacts">
+              <div class="contacts__title-sm title-sm">Contact Details</div>
+              <address>Lifetime Legal Ltd <br>
+                459 London Road, Camberley, <br>
+                Surrey GU15 3JA
+              </address>
+              <a class="contacts__phone" href="tel:01276538358">01276 538 358</a>
+              <a class="contacts__email" href="mailto:enquiries@lifetimelegal.co.uk">enquiries@lifetimelegal.co.uk</a>
+            </div>
+            <div class="contacts__social">
+              <a href="#"><img src="img/facebook-contacts.svg" alt="facebook"></a>
+              <a href="#"><img src="img/linkedin-contacts.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4944788.709951564!2d-6.813719648869055!3d52.760200116173586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d0a98a6c1ed5df%3A0xf4e19525332d8ea8!2z0JDQvdCz0LvQuNGPLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1649316295185!5m2!1sru!2sua"
+        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    @include('partials/footer.html')
+
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

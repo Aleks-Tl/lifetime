@@ -1349,3 +1349,214 @@ body {
     margin-top: 30px;
   }
 }
+
+// Contacts page
+
+.contacts {
+  padding-top: 180px;
+  padding-bottom: 140px;
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+    padding-top: 140px;
+  }
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  // .contacts__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  // .contacts__left
+
+  &__left {
+    flex: 0 1 50%;
+  }
+
+  // .contacts__title-big
+
+  &__title-big {}
+
+  // .contacts__right
+
+  &__right {
+    flex: 0 1 50%;
+    padding-left: 260px;
+    @media (max-width: 1200px) {
+      padding-left: 160px;
+    }
+    @media (max-width: 992px) {
+      padding-left: 60px;
+    }
+    @media (max-width: 768px) {
+      padding-left: 0;
+      margin-top: 50px;
+    }
+    @media (max-width: 576px) {
+      padding-left: 0;
+      margin-top: 35px;
+    }
+  }
+
+  // .contacts__title
+
+  &__title {}
+
+  // .contacts__text
+
+  &__text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  // .contacts__block
+
+  &__block {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    a {
+      color: var(--colorMain);
+      display: block;
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 26px;
+
+      }
+    }
+  }
+
+  // .contacts__title-sm
+
+  &__title-sm {}
+
+  // .contacts__phone
+  address {
+    padding-left: 37px;
+    background-image: url('../img/contats-location-svgrepo-com.svg');
+    background-position: left 8px;
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    @media (max-width: 576px) {
+      background-position: left 5px;
+    }
+  }
+  &__phone {
+    padding-left: 37px;
+    background-image: url('../img/contats-phone-svgrepo-com.svg');
+    background-position: left 8px;
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 576px) {
+      background-position: left 5px;
+    }
+    &:hover {
+      color: var(--colorBlue);
+    }
+  }
+
+  // .contacts__email
+
+  &__email {
+    padding-left: 37px;
+    background-image: url('../img/contats-mail-svgrepo-com.svg');
+    background-position: left 8px;
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 576px) {
+      background-position: left 6px;
+    }
+    &:hover {
+      color: var(--colorBlue);
+    }
+  }
+  &__social {
+    margin-top: 20px;
+    padding-left: 37px;
+    a {
+      margin-right: 10px;
+      img {
+        transition: all 0.3s ease 0s;
+        &:hover {
+          box-shadow: 1px 1px 5px rgba(#005d95, 0.8);
+          background-color: #d1e8f8;
+        }
+      }
+
+    }
+  }
+  &__map {
+    @media (max-width: 992px) {
+      iframe {
+        height: 400px;
+      }
+    }
+    @media (max-width: 576px) {
+      iframe {
+        height: 300px;
+      }
+    }
+  }
+}
+
+.feed-form {
+  margin-top: 20px;
+  input, textarea {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #A3CEED;
+  outline: none;
+  }
+  input {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 100px;
+  }
+  textarea {
+    padding-left: 120px;
+    padding-top: 9px;
+    resize: none;
+    height: 120px;
+  }
+  label[for="text"] {
+    transform: translateY(25px);
+  }
+
+  label {
+    display: inline-block;
+    transform: translateY(26px);
+    span {
+      color: red;
+    }
+  }
+  // .feed-form__btn
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  .button {
+
+    // .button__wrap
+
+    &__wrap {}
+  }
+}
+
+

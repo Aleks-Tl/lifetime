@@ -152,27 +152,22 @@
     display: block;
     margin-top: 10px;
   }
-}
-address {
-  margin-top: 10px;
-  line-height: 30px;
-  padding-left: 35px;
-  background-image: url('../img/location-svgrepo-com.svg');
-  background-position: left 7px;
-  background-size: 15px 17px;
-  background-repeat: no-repeat;
-  @media (max-width: 576px) {
-    background-image: none;
-    padding-left: 0;
+  address {
+    margin-top: 10px;
+    line-height: 30px;
+    padding-left: 35px;
+    background-image: url('../img/location-svgrepo-com.svg');
+    background-position: left 7px;
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+    @media (max-width: 576px) {
+      background-image: none;
+      padding-left: 0;
+    }
   }
 }
-.logos {
-}
-.footer-menu {
-}
-.partner-footer {
 
-}
+
 
 .block {
 

@@ -1206,7 +1206,7 @@ body {
     &__body {
       &.active {
         //max-height: 280px;
-        max-height: 100%;
+        //max-height: 100%;
       }
     }
   }
@@ -1215,45 +1215,52 @@ body {
   margin: 60px auto 0 auto;
   width: 100%;
   border-radius: 10px;
-  @media (max-width: 576px) {
-    margin-top: 30px;
+  &-text {
+    line-height: 20px;
   }
-  &__item {
-    background-color: var(--colorWhite);
-    border: 1px solid #CDE5F5;
-    box-shadow: 2px 2px 20px rgba(0, 93, 149, 0.1);
+  &-header {
     border-radius: 10px;
+  }
+  &-item {
     margin-bottom: 10px;
-    //transition: all 0.3s ease 0s;
+    background: var(--colorWhite);
+    border: 1px solid #CDE5F5;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 30px rgba(0, 93, 149, 0.1);
+    border-radius: 10px !important;
+    @media (max-width: 992px) {
+
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 30px;
-    outline: none;
-    border: none;
-    background-color: var(--colorWhite);
-    border-radius: 10px;
+  .accordion-button:not(.collapsed) {
+    color: var(--colorMain);
+  }
+  .accordion-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    cursor: pointer;
-    position: relative;
-    @media (max-width: 992px) {
-      padding: 15px 15px;
-      font-size: 15px;
-      text-align: left;
-      padding-right: 60px;
+    border-radius: 10px;
+    background-color: var(--colorWhite);
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px !important;
+    span {
+      display: inline-block;
+      @media (max-width: 992px) {
+        max-width: 90%;
+      }
     }
     @media (max-width: 768px) {
       font-size: 14px;
+      line-height: 24px;
     }
     @media (max-width: 576px) {
-      line-height: 20px;
       font-size: 13px;
-      padding-right: 50px;
-
+      line-height: 20px;
     }
     &:after {
       content: '';
@@ -1270,6 +1277,10 @@ body {
       }
     }
     &:before {
+      content: none;
+    }
+    &.collapsed {
+      &:before {
       content: '';
       position: absolute;
       top: 50%;
@@ -1282,29 +1293,9 @@ body {
         right: 21px;
         height: 14px;
       }
-    }
-    &.active {
-      &:before {
-        content: none;
-      }
-    }
-  }
-
-  &__body {
-    padding: 0 30px;
-    max-height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-sizing: content-box;
-    @media (max-width: 768px) {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    //transition: max-height 0.3s ease 0s;
-    &.active {
-      padding-bottom: 30px;
-    }
-  }
+     }
+   }
+}
 }
 .body-accordion {
 
@@ -1314,6 +1305,9 @@ body {
     line-height: 20px;
   }
 
+  &__btn {
+    margin-top: 30px;
+  }
   // .body-accordion__list
 
   &__list {
@@ -1341,12 +1335,6 @@ body {
         }
       }
     }
-  }
-
-  // .body-accordion__btn
-
-  &__btn {
-    margin-top: 30px;
   }
 }
 

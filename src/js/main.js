@@ -86,7 +86,7 @@ counters.forEach(counter => {
 
 // Accordion
 
-const acc_btns = document.querySelectorAll('.accordion__header');
+/* const acc_btns = document.querySelectorAll('.accordion__header');
 const acc_contents = document.querySelectorAll('.accordion__body');
 
 acc_btns.forEach((btn) => {
@@ -102,13 +102,11 @@ acc_btns.forEach((btn) => {
     panel.classList.toggle('active');
     btn.classList.toggle('active');
 
-    /* if (panel.classList.contains('active')) {
+    if (panel.classList.contains('active')) {
       panel.style.maxHeight = panel.scrollHeight + 'px';
     } else {
       panel.style.maxHeight = null;
-    } */
-
-
+    }
   })
 })
 
@@ -118,3 +116,4 @@ window.onclick = (e) => {
     acc_contents.forEach((acc) => acc.classList.remove('active'));
   }
 }
+ */

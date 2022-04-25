@@ -55,6 +55,22 @@
             visibility: visible;
           }
           @media (max-width: 992px) {
+            &:after {
+              content: '';
+              position: absolute;
+              top: 5px;
+              width: 8px;
+              height: 8px;
+              transform: rotate(-45deg);
+              right: -13px;
+              border: 2px solid black;
+              border-right: none;
+              border-top: none;
+            }
+            &.show:after {
+              transform: rotate(135deg);
+              top: 8px;
+            }
             &.show .submenu {
               display: block;
             }
